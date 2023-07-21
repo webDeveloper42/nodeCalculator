@@ -55,17 +55,19 @@ function subtract(){
     var greatestNum = Math.max(firstNum , secondNum);
     var lowestNum = Math.min(firstNum , secondNum);
     var result = parseFloat(greatestNum) - parseFloat(lowestNum);
-    console.log('The result is: ' + result);
+    console.log('The result from ' + parseFloat(greatestNum) + '-' + parseFloat(lowestNum) + ' is: '  + result);
 }
 function multiply(){
     var result = parseFloat(firstNum) * parseFloat(secondNum);
-    console.log('The result is: ' + result);
+    console.log('The result from is: ' + result);
 }
 function divide(){
     var greatestNum = Math.max(firstNum , secondNum);
     var lowestNum = Math.min(firstNum , secondNum);
     var result = parseFloat(greatestNum) / parseFloat(lowestNum);
-    console.log('The result is: ' + result);
+    var resultTwo = firstNum / secondNum;
+    console.log('The result from ' + parseFloat(greatestNum) + '/' + parseFloat(lowestNum) + ' is: '  + result);
+    console.log('The result from ' + firstNum + '/' + secondNum + ' is: '  + resultTwo);
 }
 
 
