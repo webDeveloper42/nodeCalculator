@@ -28,10 +28,10 @@ while(true){
     // After the user enters a valid operation, ask the user, "Please enter the first number"
     var firstNum = rs.question('Please enter the first number: ');
     // The user then enters the first number. If the user enters something that is not a number, print: “This is not a number” and then re-ask the question
-    if(!isNaN(firstNum)){
-        break;
-    }else{
+    if(firstNum === '' || isNaN(firstNum)){
         console.log('This is not a number.')
+    }else{
+        break;
     }
     
 }
@@ -39,10 +39,10 @@ console.log(firstNum);
 while(true){
     // After a valid number is entered, ask the user, "Please enter the second number". Perform the same error handling as before
     var secondNum = rs.question('Please enter the second number: ');
-    if(!isNaN(secondNum)){
-        break;
-    }else{
+    if(secondNum === '' || isNaN(secondNum)){
         console.log('This is not a number.')
+    }else{
+        break;
     }
 }
 console.log(secondNum);
